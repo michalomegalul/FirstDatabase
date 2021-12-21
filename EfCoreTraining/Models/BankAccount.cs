@@ -6,10 +6,12 @@ using System.Threading.Tasks;
 
 namespace EfCoreTraining.Models
 {
-    public class User
+    public class BankAccount
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public ICollection<BankAccount> BankAccounts { get; set; } = new HashSet<BankAccount>();
+        public string Number { get; set; }
+        public decimal Balance { get; set; }
+        public int UserId { get; set; }
     }
 }
